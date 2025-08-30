@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+section {
+  margin-bottom: px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgb(255, 252, 199);
+  margin-left:58px;
+  font-size: 1.6em;
+}
+header {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  font-family: 'Oswald', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: rgb(87, 86, 84);
+  background: #161616;
+}
+header nav a {
+  margin-right: 24px;
+}
+header a {
+  color: rgb(91, 91, 91);
+  text-decoration: none;
+}
+p {
+    margin-top: 30 px;
+    color: white;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    margin-right: 100px;
+    
+}
+body {
+  background: black;
+}
+#about {
+  margin-top: 70px;
+}
+#contact {
+  margin-left: 58px;
+}
+#contact a img {
+  margin-top: 50px;
+}
+header nav a:hover {
+  color: rgb(255, 252, 199);
+  text-decoration: underline;
+}
+
+section:hover {
+  box-shadow: 0 4px 24px rgba(255, 252, 199, 0.2);
+  transition: box-shadow 0.2s;
+}
+
+p:hover {
+  color: rgb(255, 252, 199);
+  background: rgba(87, 86, 84, 0.2);
+  transition: background 0.2s;
+}
+
+#contact a img:hover {
+  transform: scale(1.15);
+  transition: transform 0.2s;
+}
+
+
