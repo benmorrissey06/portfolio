@@ -5,6 +5,30 @@
   <title>Personal Portfolio</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
+<style>
+  /* Dropdown for project card */
+  .project-toggle:checked + .project-toggle-label .arrow {
+    transform: rotate(180deg);
+  }
+  .project-toggle-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+  }
+  .project-toggle-label .arrow {
+    margin-left: 8px;
+    font-size: 1.1em;
+    transition: transform 0.2s;
+  }
+  .project-details {
+    display: none;
+  }
+  .project-toggle:checked + .project-toggle-label + .project-details {
+    display: block;
+  }
+</style>
+</head>
 <body>
 
   <!-- Navigation (optional for now) -->
@@ -35,21 +59,27 @@
       3. You can adjust width/height as needed.
     -->
     <div class="project-card">
-      <div class="project-title">Project Title Here</div>
-      <div class="project-description">
-        Brief description of the project goes here. Explain what it does, what makes it interesting, and any key features.
-      </div>
-      <div class="project-links">
-        <video class="project-video" width="320" height="180" controls>
-          <source src="videos/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <video class="project-video" width="320" height="180" controls>
-          <source src="videos/animation.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <a class="project-link" href="#" target="_blank">See code</a>
-      </div>
+        <input type="checkbox" class="project-toggle" id="project1-toggle" hidden>
+        <label class="project-title project-toggle-label" for="project1-toggle">
+          Project Title Here
+          <span class="arrow">▼</span>
+        </label>
+        <div class="project-details">
+          <div class="project-description">
+            Brief description of the project goes here. Explain what it does, what makes it interesting, and any key features.
+          </div>
+          <div class="project-links">
+            <video class="project-video" width="320" height="180" controls>
+              <source src="videos/demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <video class="project-video" width="320" height="180" controls>
+              <source src="videos/animation.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <a class="project-link" href="#" target="_blank">See code</a>
+          </div>
+        </div>
     </div>
     <!-- End Project Template -->
   </section>
