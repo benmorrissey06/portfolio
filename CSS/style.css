@@ -3,7 +3,7 @@
 section {
   margin-bottom: px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: rgb(255, 252, 199);
+  color: white;
   margin-left:58px;
   font-size: 2.0em;
 }
@@ -98,12 +98,12 @@ header nav a:hover {
 }
 
 section:hover {
-  box-shadow: 0 4px 24px rgba(255, 252, 199, 0.2);
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.2);
   transition: box-shadow 0.2s;
 }
 
 p:hover {
-  color: rgb(255, 252, 199);
+  color: white;
   background: rgba(87, 86, 84, 0.2);
   transition: background 0.2s;
 }
@@ -111,4 +111,31 @@ p:hover {
 #contact a img:hover {
   transform: scale(1.15);
   transition: transform 0.2s;
+}
+
+/* Experience Section Styles */
+#xp h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#xp .experience-item {
+  margin-bottom: 1.5rem;
+}
+
+#xp .experience-bullets {
+  font-size: 0.5em;
+  color: white;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#xp .experience-bullets li {
+  margin-bottom: 0.3rem;
+  list-style-type: disc;
 }
