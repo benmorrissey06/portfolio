@@ -51,7 +51,28 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    
+
+
+
+     <!-- Spinning Robot Controller Project -->
+    <div class="project-card">
+        <input type="checkbox" class="project-toggle" id="robot-toggle" hidden>
+        <label class="project-title project-toggle-label" for="robot-toggle">
+          Spinning Robot Controller
+          <span class="arrow">▼</span>
+        </label>
+        <div class="project-details">
+          <div class="project-description">
+            Created a spinning robot with Raspberry Pi Pico and Python. It features real-time directional control via angle input and calculates the shortest path. (one wheel rotates, the other moves it forward). I implemented calibration algorithms to convert PWM duty cycles to consistent wheel speeds. This project served as an intro to embedded software development and electronics -- and I'm excited to do more complex Raspberry Pi projects in the future!
+
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="https://www.youtube.com/watch?v=PQmc27xYO6c" target="_blank">Watch Demo</a>
+            <a class="project-link" href="https://github.com/benmorrissey06/dotify" target="_blank">View Code</a>
+            <a class="project-link" href="https://devpost.com/software/dotify" target="_blank">See more</a>
+          </div>
+        </div>
+    </div>
     <!-- Dotify Project -->
     <div class="project-card">
         <input type="checkbox" class="project-toggle" id="dotify-toggle" hidden>
@@ -61,7 +82,7 @@
         </label>
         <div class="project-details">
           <div class="project-description">
-            Built an AI-powered Braille label printer that combines computer vision, embedded systems, and accessibility design. Gained expertise in hardware-software integration, servo motor control, and creating assistive technology that makes everyday spaces more inclusive.
+            Awarded 2nd place in HackGT for Hardware with Dotify, an AI-powered Braille label printer. I led frontend (TypeScript), backend (Python, Gemini API integration), and collaborated on firmware development (C++) for servo control and Braille embossing. I learned a lot about software development, AI, and embedded systems. It my first hackathon and I really want to do more, something about it is addicting, there was never a dull moment.
           </div>
           <div class="project-links">
             <a class="project-link" href="https://www.youtube.com" target="_blank">Watch Demo</a>
@@ -70,23 +91,7 @@
         </div>
     </div>
 
-    <!-- Spinning Robot Controller Project -->
-    <div class="project-card">
-        <input type="checkbox" class="project-toggle" id="robot-toggle" hidden>
-        <label class="project-title project-toggle-label" for="robot-toggle">
-          Spinning Robot Controller
-          <span class="arrow">▼</span>
-        </label>
-        <div class="project-details">
-          <div class="project-description">
-            Developed a precise robotic positioning system using Raspberry Pi Pico and motor control algorithms. Mastered embedded programming, PWM control, and real-time systems to achieve accurate angular positioning with smooth coordinated movement.
-          </div>
-          <div class="project-links">
-            <a class="project-link" href="https://www.youtube.com" target="_blank">Watch Demo</a>
-            <a class="project-link" href="https://github.com" target="_blank">View Code</a>
-          </div>
-        </div>
-    </div>
+   
   </section>
 
   <section id="xp">
